@@ -394,10 +394,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* footer */
 
 .footer {
-padding: 100px 0;
+    padding: 96px 0;
+/* padding: 100px 0; */
 }
 
 .footer-logo {
+display: flex;
+justify-content: center;
+margin-bottom: 16px;
     /* margin-bottom: 16px; */
     /* display: inline-block; */
 }
@@ -408,12 +412,20 @@ padding: 100px 0;
 
 .footer-cont {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-left: 80px; */
+    width: 100%;
+    
+    
+    /* align-items: baseline; */
 
 }
 
 .footer-container {
-    margin-right: 120px;
+    margin-bottom: 72px;
+    /* margin-right: 120px; */
 
 }
 .footer-text {
@@ -427,6 +439,8 @@ padding: 100px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
 .footer-socials-list {
     display: flex;
@@ -461,13 +475,20 @@ height: 40px;
 }
 
 .social-media-cont {
-    margin-right: 80px;
+    justify-content: center;
+margin-bottom: 72px;
+    /* margin-right: 80px; */
 }
 
+.subscribe-container {
 
+}
 .subsc-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+    /* gap: 24px; */
 
     
 }
@@ -690,26 +711,35 @@ height: 40px;
 
 /* section five */
 
+.customers-header {
+margin-bottom: 72px;
+
+}
 .section-five {
-padding: 120px 0;
+padding: 96px 0;
 }
 .apps-list {
     background-color: var(--white);
+    row-gap: 72px;
+    column-gap: 16px;
+   
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
 }
+
 .apps-item {
+flex-basis: calc((100% - 16px) / 2);
     background-color: var(--white);
     /* border: 1px solid var(--light-slate); */
         border-radius: 4px;
-        width: 168px;
-        height: 88px;
 }
 .app-icon {
-    width: 64px;
-    height: 64px;
+    width: 168px;
+        height: 88px;
+    /* width: 190px;
+    height: 88px; */
     fill: var(--light-slate);
 
 }

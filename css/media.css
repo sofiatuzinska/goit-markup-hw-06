@@ -37,7 +37,14 @@
             display: flex;
             gap: 24px;
         }
-    
+        .apps-item {
+            flex-basis: calc((100% - 32px) / 3);
+        }
+
+                .footer-cont {
+                    padding: 96px 0;
+                }
+               
     }
 /* descktop */
 @media screen and (min-width: 1158px) {
@@ -87,4 +94,12 @@
          .doing-item {
              flex-basis: calc((100% - 2 * 24px) / 3);
          }
+
+                 .apps-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 24px;
+                    flex-wrap: nowrap;
+                 }
 }
